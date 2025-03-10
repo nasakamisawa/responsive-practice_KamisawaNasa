@@ -1,47 +1,39 @@
 @charset "UTF-8";
-
-.size-change {
-  background: #ff0000;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-}
-.color-change {
-  background: #ff0000;
+.color-change, .margin-change_blue, .margin-change_green, .float_red, .float_blue, .flex-reverse, .flex-switch, .flex-hidden {
   width: 300px;
   height: 300px;
+}
+.size-change { 
+  width: 400px;
+  height: 400px;
+}
+.size-change, .color-change {
+  background: #ff0000;
   margin: 0 auto;
 }
-.flex {
+.flex, .flex-box_reverse, .flex-box_switch, .flex-box_hidden {
   display: flex;
   justify-content: center;
 }
 .margin-change_blue {
   background: #0008ff;
-  width: 300px;
-  height: 300px;
   margin-right: 150px;
 }
 .margin-change_green {
   background: #22ff00;
-  width: 300px;
-  height: 300px;
 }
 .float_area {
   width: 600px;
   margin: 0 auto;
 }
+.float_red, .float_blue {
+  float: left;
+}
 .float_red {
   background: #ff0000;
-  width: 300px;
-  height: 300px;
-  float: left;
 }
 .float_blue {
   background: #0008ff;
-  width: 300px;
-  height: 300px;
-  float: left;
 }
 .clearfix::after {
   content: "";
@@ -49,13 +41,9 @@
   clear: both;
 }
 .flex-box_reverse {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 .flex-reverse {
-  width: 300px;
-  height: 300px;
   position: relative;
 }
 .red-box {
@@ -67,20 +55,14 @@
 .orange-box {
   background: #ff8400;
 }
-.flex-reverse p {
+.flex-reverse p, .flex-box_switch p {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.flex-box_switch {
-  display: flex;
-  justify-content: center;
-}
 .flex-switch {
-  width: 300px;
-  height: 300px;
   position: relative;
 }
 .green-box {
@@ -94,21 +76,6 @@
 .pink-box {
   background: #ff00e1;
   order: 3;
-}
-.flex-box_switch p {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.flex-box_hidden {
-  display: flex;
-  justify-content: center;
-}
-.flex-hidden {
-  width: 300px;
-  height: 300px;
 }
 .hidden-red {
   background: #ff0000;
